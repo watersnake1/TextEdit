@@ -1,0 +1,20 @@
+What has changed
+
+Font can now be changed
+font size picker does not yet work
+curly brace matching does not yet work
+Run command works with one word commands like ls, but not with commands like javac 
+
+to do
+remember font between changes?
+curly brace matching
+fix font size picker
+allow for editing in multiple tabs
+
+when user selects file from left browser view, or when user selects one from jfilchooser, addtab
+method is called and the info from the file is put into the new tab
+
+useful methods
+addTab() adds another tab to the pane
+add() adds a tab with specified component to the pane
+getSelectedIndex() returns int index of tab that is currently focused

@@ -64,9 +64,14 @@ public class UserInterface extends JFrame {
         super("Sweat editor - Untitled Text");
         //make the swing components look like the system (will match with linux themeing)
         try {
-            UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+            for (UIManager.LookAndFeelInfo info : UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
         } catch (Exception e) {
-            e.printStackTrace();
+            // If Nimbus is not available, you can set the GUI to another look and feel.
         }
         topMenu = new JMenuBar();
         file = new JMenu("File");

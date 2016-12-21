@@ -19,7 +19,8 @@ public class EnterButtonActionListener implements java.awt.event.ActionListener 
     @Override
     public void actionPerformed(ActionEvent e) {
         String commandOutput = null;
-        String command = textField.getText();
+        //need to text word by word from text field
+        String[] command = textField.getText().split(" ");
         textField.setText("");
         CommandOutputView c = new CommandOutputView();
         Process p = null;

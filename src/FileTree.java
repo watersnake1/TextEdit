@@ -51,7 +51,7 @@ import javax.swing.tree.DefaultMutableTreeNode;
                     } catch (FileNotFoundException e1) {
                         e1.printStackTrace();
                     }
-                    char[] buffer = new char[1024];
+                    char[] buffer = new char[100000000];
                     int n = 0;
                     try {
                         n = in.read(buffer);

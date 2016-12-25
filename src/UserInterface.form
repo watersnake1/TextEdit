@@ -210,7 +210,7 @@
                   </grid>
                 </children>
               </tabbedpane>
-              <toolbar id="1476e">
+              <toolbar id="1476e" binding="bottomMostToolBar">
                 <constraints>
                   <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
                     <preferred-size width="-1" height="20"/>
@@ -221,21 +221,29 @@
                 </properties>
                 <border type="none"/>
                 <children>
-                  <component id="4313b" class="javax.swing.JLabel" binding="compile">
+                  <component id="4313b" class="javax.swing.JLabel" binding="compileButton">
                     <constraints/>
                     <properties>
-                      <text value="Label"/>
+                      <icon value="reload.png"/>
+                      <text value=""/>
+                      <toolTipText value="Compile"/>
                     </properties>
                   </component>
                   <component id="f12d7" class="javax.swing.JToolBar$Separator">
                     <constraints/>
                     <properties/>
                   </component>
-                  <component id="849af" class="javax.swing.JLabel" binding="run">
+                  <component id="849af" class="javax.swing.JLabel" binding="runButton">
                     <constraints/>
                     <properties>
-                      <text value="Label"/>
+                      <icon value="play-button.png"/>
+                      <text value=""/>
+                      <toolTipText value="Run"/>
                     </properties>
+                  </component>
+                  <component id="cb034" class="javax.swing.JComboBox" binding="languageComboBox">
+                    <constraints/>
+                    <properties/>
                   </component>
                 </children>
               </toolbar>

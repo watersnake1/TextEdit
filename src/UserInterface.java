@@ -41,6 +41,8 @@ public class UserInterface extends JFrame {
     private JLabel runLabel;
     private JTextField commandTextField;
     private JButton enterButton;
+    private JLabel compile;
+    private JLabel run;
     private JMenuBar topMenu;
     private JMenu file;
     private JMenu edit;
@@ -88,6 +90,8 @@ public class UserInterface extends JFrame {
 
         //in future, if this is true editor will match curly braces
         shouldBeCodeEditor = true;
+
+        compile.setIcon(new ImageIcon("../assets/reload.png"));
 
         //code for top menu bar is hard coded
         setJMenuBar(topMenu);

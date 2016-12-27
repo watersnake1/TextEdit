@@ -68,6 +68,9 @@ public class UserInterface extends JFrame {
     private JToolBar bottomMostToolBar;
     //lang support combo box
     private JComboBox languageComboBox;
+    private JButton usageButton;
+    private JButton copyToDropbox;
+    private JButton filesButton;
 
 
     //top level imbedded menu
@@ -89,12 +92,11 @@ public class UserInterface extends JFrame {
     private File target;
     //determine if should match curly braces
     private boolean shouldBeCodeEditor;
-    //array of possible font sizes
-    private int[] fontSizes;
 
     //icons
     private ImageIcon compileIcon;
     private ImageIcon runIcon;
+    private ImageIcon saveIcon;
 
 
     private LangTypeComboItem java;
@@ -131,6 +133,10 @@ public class UserInterface extends JFrame {
         cut = new JMenuItem("cut");
         copy = new JMenuItem("copy");
         paste = new JMenuItem("paste");
+
+        //set up the tool bar menus
+        saveIcon = new ImageIcon("../assets/png/folder.png");
+        //saveButton.setIcon(saveIcon);
 
         //add in jmenus
         topMenu.add(file,0);
@@ -187,7 +193,6 @@ public class UserInterface extends JFrame {
         //prevent tool bars from floating
         topToolBar.setFloatable(false);
         bottomToolBar.setFloatable(false);
-        fontSizes = new int[]{8,10,12,14,16,18,24,26};
         //create the font pickers
         configureFontPicker(fontPicker, fontSizePicker);
         //set the tab size to 2
@@ -213,9 +218,6 @@ public class UserInterface extends JFrame {
         Font[] allFonts = environment.getAllFonts();
         for (Font f: allFonts) {
             comboBox.addItem(new FontComboItem(f.getName(), 14));
-        }
-        for (int size: fontSizes) {
-            sizeComboBox.addItem(new FontSizeComboItem(size));
         }
     }
 
@@ -264,7 +266,6 @@ public class UserInterface extends JFrame {
         aboutButton.addActionListener(new AboutActionListener(panel1));
         quitButton.addActionListener(new QuitActionListener());
         fontPicker.addActionListener(new FontSetterActionListener(fontPicker, editorPane1, boldButton, italicsButton));
-        fontSizePicker.addActionListener(new FontSizeSetterActionListener(editorPane1, fontPicker, fontSizePicker));
         shouldBeHtml.addActionListener(new LineWrapActionListener(editorPane1, shouldBeHtml));
         boldButton.addActionListener(new RadioButtonActionListener(editorPane1, boldButton));
         italicsButton.addActionListener(new RadioButtonActionListener(editorPane1, italicsButton));

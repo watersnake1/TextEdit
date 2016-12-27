@@ -29,6 +29,7 @@ import javax.swing.tree.DefaultMutableTreeNode;
         /** Construct a FileTree */
         private JFrame frame;
         private JEditorPane editorPane;
+
         public FileTree(File dir, JFrame frame, JEditorPane editorPane) {
             setLayout(new BorderLayout());
             this.frame = frame;
@@ -39,31 +40,40 @@ import javax.swing.tree.DefaultMutableTreeNode;
             // Add a listener
             tree.addTreeSelectionListener(new TreeSelectionListener() {
                 public void valueChanged(TreeSelectionEvent e) {
+                    //get the selected node
                     DefaultMutableTreeNode node = (DefaultMutableTreeNode) e
                             .getPath().getLastPathComponent();
-                    String path = node.getParent().toString() + "/" + node.toString();
-                    System.out.println("You selected " + node.getParent().toString() + "/" + node.toString());
-                    File target = new File(path);
-                    frame.setTitle(target.getName());
-                    FileReader in = null;
-                    try {
-                        in = new FileReader(target);
-                    } catch (FileNotFoundException e1) {
-                        e1.printStackTrace();
-                    }
-                    char[] buffer = new char[100000000];
-                    int n = 0;
-                    try {
-                        n = in.read(buffer);
-                    } catch (IOException e1) {
-                        e1.printStackTrace();
-                    }
-                    String text = new String(buffer, 0, n);
-                    editorPane.setText(text);
-                    try {
-                        in.close();
-                    } catch (IOException e1) {
-                        e1.printStackTrace();
+                    //if the node is a leaf, keep going, else do nothing
+                    if (node.isLeaf()) {
+                        //get a string consisting of the leafs file path
+                        String path = node.getParent().toString() + "/" + node.toString();
+                        System.out.println("You selected " + node.getParent().toString() + "/" + node.toString());
+                        //construct a file from this string
+                        File target = new File(path);
+                        //set the title of the frame to the name of the file
+                        frame.setTitle(target.getName());
+                        //read from the file
+                        FileReader in = null;
+                        try {
+                            in = new FileReader(target);
+                        } catch (FileNotFoundException e1) {
+                            JOptionPane.showMessageDialog(frame, "Unsupported Filetype");
+                            e1.printStackTrace();
+                        }
+                        char[] buffer = new char[100000000];
+                        int n = 0;
+                        try {
+                            n = in.read(buffer);
+                        } catch (IOException e1) {
+                            e1.printStackTrace();
+                        }
+                        String text = new String(buffer, 0, n);
+                        editorPane.setText(text);
+                        try {
+                            in.close();
+                        } catch (IOException e1) {
+                            e1.printStackTrace();
+                        }
                     }
 
                 }

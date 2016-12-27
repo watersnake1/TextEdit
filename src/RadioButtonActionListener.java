@@ -28,9 +28,11 @@ public class RadioButtonActionListener implements java.awt.event.ActionListener 
     public void actionPerformed(ActionEvent e) {
         if (isBold(radioButton)) {
             editorPane.setFont(new Font(editorPane.getFont().getName(), Font.BOLD, 14));
+            System.out.println("bold selected");
         }
         else {
             editorPane.setFont(new Font(editorPane.getFont().getName(), Font.ITALIC, 14));
+            System.out.println("Italic selected");
         }
     }
 }

@@ -6,15 +6,14 @@
     What has changed
 
 Font can now be changed
-font size picker does not yet work
 curly brace matching does not yet work
-Run command works with one word commands like ls, but not with commands like 
-    javac 
+icons added to tool bars
+some buttons moved
+
 
 to do
 remember font between changes?
 curly brace matching
-fix font size picker
 allow for editing in multiple tabs
 Add build and install scripts directly into source code so that everything is 
     together and accesible at once (if you wanted to make one archive)
@@ -27,5 +26,7 @@ useful methods
 addTab() adds another tab to the pane
 add() adds a tab with specified component to the pane
 getSelectedIndex() returns int index of tab that is currently focused
+
+add buttons that show cpu usage, copy to dropbox, and open nautilus
   </body>
 </html>

@@ -14,6 +14,6 @@ public class AboutActionListener extends MenuBarActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        JOptionPane.showMessageDialog(panel, "Pez Editor V.0.0.2");
+        JOptionPane.showMessageDialog(panel, "Pez Editor V.0.0.2 \n All icons courtesy of flaticons.com and are property of their respective creators");
     }
 }

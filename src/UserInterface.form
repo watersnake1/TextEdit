@@ -48,9 +48,19 @@
                       <toolTipText value="Change between plaintext line wrap and html line wrap"/>
                     </properties>
                   </component>
-                  <component id="3bf26" class="javax.swing.JComboBox" binding="fontSizePicker">
+                  <component id="d241e" class="javax.swing.JRadioButton" binding="boldButton">
                     <constraints/>
-                    <properties/>
+                    <properties>
+                      <text value="Bold"/>
+                      <toolTipText value="Bold"/>
+                      <verticalAlignment value="0"/>
+                    </properties>
+                  </component>
+                  <component id="82899" class="javax.swing.JRadioButton" binding="italicsButton">
+                    <constraints/>
+                    <properties>
+                      <text value="Italics"/>
+                    </properties>
                   </component>
                   <component id="6e3ae" class="javax.swing.JComboBox" binding="fontPicker">
                     <constraints/>
@@ -65,80 +75,112 @@
                   </grid>
                 </constraints>
                 <properties>
-                  <background color="-5725026"/>
+                  <background color="-1"/>
                 </properties>
                 <border type="none"/>
                 <children>
                   <component id="d4e4e" class="javax.swing.JButton" binding="saveButton" default-binding="true">
                     <constraints/>
                     <properties>
-                      <text value="Save"/>
+                      <icon value="png/save@32x32.png"/>
+                      <text value=""/>
+                      <toolTipText value="Save File"/>
                     </properties>
                   </component>
                   <component id="d3a56" class="javax.swing.JButton" binding="newButton" default-binding="true">
                     <constraints/>
                     <properties>
-                      <text value="New"/>
+                      <icon value="png/folder@32x32.png"/>
+                      <text value=""/>
+                      <toolTipText value="New"/>
                     </properties>
                   </component>
                   <component id="ab8f7" class="javax.swing.JButton" binding="openButton" default-binding="true">
                     <constraints/>
                     <properties>
-                      <text value="Open"/>
+                      <icon value="png/open-box.png"/>
+                      <text value=""/>
+                      <toolTipText value="Open"/>
                     </properties>
                   </component>
                   <component id="21f3b" class="javax.swing.JButton" binding="clearButton" default-binding="true">
                     <constraints/>
                     <properties>
-                      <text value="Clear"/>
+                      <icon value="png/garbage@32x32.png"/>
+                      <text value=""/>
+                      <toolTipText value="Clear"/>
                     </properties>
                   </component>
                   <component id="8b2a7" class="javax.swing.JButton" binding="cutButton" default-binding="true">
                     <constraints/>
                     <properties>
-                      <text value="Cut"/>
+                      <icon value="png/scissors.png"/>
+                      <text value=""/>
+                      <toolTipText value="Cut"/>
                     </properties>
                   </component>
                   <component id="218c4" class="javax.swing.JButton" binding="copyButton" default-binding="true">
                     <constraints/>
                     <properties>
-                      <text value="Copy"/>
+                      <icon value="png/papers.png"/>
+                      <text value=""/>
+                      <toolTipText value="Copy"/>
                     </properties>
                   </component>
                   <component id="ccaf7" class="javax.swing.JButton" binding="pasteButton" default-binding="true">
                     <constraints/>
                     <properties>
-                      <text value="Paste"/>
+                      <icon value="png/clipboard.png"/>
+                      <text value=""/>
+                      <toolTipText value="Paste"/>
                     </properties>
                   </component>
                   <component id="a97aa" class="javax.swing.JButton" binding="aboutButton" default-binding="true">
                     <constraints/>
                     <properties>
-                      <text value="About"/>
-                    </properties>
-                  </component>
-                  <component id="d241e" class="javax.swing.JRadioButton" binding="boldButton">
-                    <constraints/>
-                    <properties>
-                      <text value="Bold"/>
-                    </properties>
-                  </component>
-                  <component id="82899" class="javax.swing.JRadioButton" binding="italicsButton">
-                    <constraints/>
-                    <properties>
-                      <text value="Italics"/>
+                      <icon value="png/info.png"/>
+                      <text value=""/>
+                      <toolTipText value="About"/>
                     </properties>
                   </component>
                   <component id="98f23" class="javax.swing.JButton" binding="plainButton" default-binding="true">
                     <constraints/>
                     <properties>
-                      <text value="Plain"/>
+                      <icon value="png/three-circling-arrows.png"/>
+                      <text value=""/>
+                      <toolTipText value="Reset to Plain"/>
+                    </properties>
+                  </component>
+                  <component id="6594" class="javax.swing.JButton" binding="usageButton">
+                    <constraints/>
+                    <properties>
+                      <icon value="png/cpu@32x32.png"/>
+                      <text value=""/>
+                      <toolTipText value="CPU usage"/>
+                    </properties>
+                  </component>
+                  <component id="18d82" class="javax.swing.JButton" binding="copyToDropbox">
+                    <constraints/>
+                    <properties>
+                      <icon value="png/wifi@32x32.png"/>
+                      <text value=""/>
+                      <toolTipText value="Copy to Dropbox"/>
+                    </properties>
+                  </component>
+                  <component id="612bb" class="javax.swing.JButton" binding="filesButton">
+                    <constraints/>
+                    <properties>
+                      <icon value="png/hard-drive@32x32.png"/>
+                      <text value=""/>
+                      <toolTipText value="Open Files"/>
                     </properties>
                   </component>
                   <component id="f38e9" class="javax.swing.JButton" binding="quitButton" default-binding="true">
                     <constraints/>
                     <properties>
-                      <text value="Quit"/>
+                      <icon value="png/power-button.png"/>
+                      <text value=""/>
+                      <toolTipText value="Quit"/>
                     </properties>
                   </component>
                 </children>

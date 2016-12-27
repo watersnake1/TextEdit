@@ -68,9 +68,10 @@ public class UserInterface extends JFrame {
     private JToolBar bottomMostToolBar;
     //lang support combo box
     private JComboBox languageComboBox;
-    private JButton usageButton;
+    private JButton addTab;
     private JButton copyToDropbox;
     private JButton filesButton;
+    private JTabbedPane topTabbedPane;
 
 
     //top level imbedded menu
@@ -176,7 +177,7 @@ public class UserInterface extends JFrame {
 
 
         //set the left side to be a file tree in current working dir
-        splitPane.setLeftComponent(new FileTree(new File("."), this, editorPane1));
+        splitPane.setLeftComponent(new FileTree(new File("."), this, editorPane1, topTabbedPane));
         add(upperJPanel);
         topMenu.add(file);
         //set the focus of the window to be the top most jpanel
@@ -251,7 +252,7 @@ public class UserInterface extends JFrame {
         about.addActionListener(new AboutActionListener(panel1));
         quit.addActionListener(new QuitActionListener());
         save.addActionListener(new SaveActionListener(editorPane1, panel1, upperJPanel));
-        open.addActionListener(new OpenActionListener(editorPane1, panel1, target, this));
+        open.addActionListener(new OpenActionListener(editorPane1, panel1, target, this, topTabbedPane));
         copy.addActionListener(new CopyActionListener(editorPane1));
         paste.addActionListener(new PasteActionListener(editorPane1));
         cut.addActionListener(new CutActionListener(editorPane1));
@@ -259,7 +260,7 @@ public class UserInterface extends JFrame {
         newDoc.addActionListener(new NewActionListener());
 
         saveButton.addActionListener(new SaveActionListener(editorPane1, panel1, upperJPanel));
-        openButton.addActionListener(new OpenActionListener(editorPane1, panel1, target, this));
+        openButton.addActionListener(new OpenActionListener(editorPane1, panel1, target, this, topTabbedPane));
         cutButton.addActionListener(new CutActionListener(editorPane1));
         copyButton.addActionListener(new CopyActionListener(editorPane1));
         pasteButton.addActionListener(new PasteActionListener(editorPane1));
@@ -274,6 +275,7 @@ public class UserInterface extends JFrame {
         compileButton.addMouseListener(new BottomToolBarActionListener(0, this));
         runButton.addMouseListener(new BottomToolBarActionListener(1, this));
         languageComboBox.addActionListener(new LanguageActionListener(this, languageComboBox));
+        addTab.addActionListener(new AddTabActionListener(topTabbedPane));
     }
 
     /**

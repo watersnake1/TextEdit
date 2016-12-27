@@ -7,76 +7,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f1272f5e-5c2b-4b7c-982e-f8ad8cf04f13" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/png/3d-glasses.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/png/3d-glasses@32x32.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/png/battery.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/png/battery@32x32.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/png/bold-text-option.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/png/camcorder.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/png/camcorder@32x32.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/png/clipboard.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/png/controller.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/png/controller@32x32.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/png/cpu.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/png/cpu@32x32.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/png/devices-1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/png/devices-1@32x32.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/png/devices.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/png/devices@32x32.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/png/email.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/png/email@32x32.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/png/folder.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/png/folder@32x32.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/png/garbage.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/png/garbage@32x32.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/png/hard-drive.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/png/hard-drive@32x32.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/png/info.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/png/internet.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/png/internet@32x32.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/png/loupe.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/png/loupe@32x32.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/png/minimize.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/png/minimize@32x32.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/png/open-box.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/png/padlock.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/png/padlock@32x32.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/png/papers.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/png/pendrive.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/png/pendrive@32x32.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/png/photo-camera.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/png/photo-camera@32x32.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/png/power-button.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/png/printer.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/png/printer@32x32.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/png/save.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/png/save@32x32.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/png/scissors.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/png/server-1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/png/server-1@32x32.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/png/server.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/png/server@32x32.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/png/settings.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/png/settings@32x32.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/png/three-circling-arrows.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/png/usb-cable.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/png/usb-cable@32x32.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/png/webcam.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/png/webcam@32x32.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/png/wifi.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/png/wifi@32x32.png" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TextEdit/FontSizeSetterActionListener.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/FontSizeSetterActionListener.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TextEdit/AboutActionListener.class" afterPath="$PROJECT_DIR$/out/production/TextEdit/AboutActionListener.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TextEdit/FileTree$1.class" afterPath="$PROJECT_DIR$/out/production/TextEdit/FileTree$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TextEdit/FileTree.class" afterPath="$PROJECT_DIR$/out/production/TextEdit/FileTree.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TextEdit/RadioButtonActionListener.class" afterPath="$PROJECT_DIR$/out/production/TextEdit/RadioButtonActionListener.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AddTabActionListener.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/TextEdit_jar/TextEdit.jar" afterPath="$PROJECT_DIR$/out/artifacts/TextEdit_jar/TextEdit.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TextEdit/UserInterface.class" afterPath="$PROJECT_DIR$/out/production/TextEdit/UserInterface.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/changes/whatsChanged" afterPath="$PROJECT_DIR$/changes/whatsChanged" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AboutActionListener.java" afterPath="$PROJECT_DIR$/src/AboutActionListener.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FileTree.java" afterPath="$PROJECT_DIR$/src/FileTree.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RadioButtonActionListener.java" afterPath="$PROJECT_DIR$/src/RadioButtonActionListener.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NewFileView.java" afterPath="$PROJECT_DIR$/src/NewFileView.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/OpenActionListener.java" afterPath="$PROJECT_DIR$/src/OpenActionListener.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/UserInterface.form" afterPath="$PROJECT_DIR$/src/UserInterface.form" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/UserInterface.java" afterPath="$PROJECT_DIR$/src/UserInterface.java" />
     </list>
@@ -102,25 +40,49 @@
       <file leaf-file-name="UserInterface.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/UserInterface.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="268" column="0" selection-start-line="268" selection-start-column="0" selection-end-line="268" selection-end-column="0" />
+            <state relative-caret-position="-1686">
+              <caret line="179" column="95" selection-start-line="179" selection-start-column="95" selection-end-line="179" selection-end-column="95" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserInterface.form" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UserInterface.form" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/UserInterface.form">
           <provider selected="true" editor-type-id="ui-designer">
             <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OpenActionListener.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AddTabActionListener.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AddTabActionListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="16" column="51" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#292#293#0" expanded="true" />
+                <element signature="e#336#337#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OpenActionListener.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/OpenActionListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="558">
-              <caret line="36" column="41" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
+            <state relative-caret-position="846">
+              <caret line="52" column="14" selection-start-line="52" selection-start-column="14" selection-end-line="52" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AboutActionListener.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AboutActionListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -139,8 +101,18 @@
       <file leaf-file-name="FileTree.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/FileTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="810">
-              <caret line="61" column="25" selection-start-line="61" selection-start-column="25" selection-end-line="61" selection-end-column="25" />
+            <state relative-caret-position="270">
+              <caret line="73" column="30" selection-start-line="73" selection-start-column="23" selection-end-line="82" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NewFileView.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/NewFileView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -171,7 +143,6 @@
         <option value="$PROJECT_DIR$/changes/whatsChanged" />
         <option value="$PROJECT_DIR$/src/LineWrapActionListener.java" />
         <option value="$PROJECT_DIR$/src/PlainButtonActionListener.java" />
-        <option value="$PROJECT_DIR$/src/NewFileView.java" />
         <option value="$PROJECT_DIR$/src/CommandOutputView.form" />
         <option value="$PROJECT_DIR$/src/SaveActionListener.java" />
         <option value="$PROJECT_DIR$/src/CommandOutputView.java" />
@@ -183,15 +154,17 @@
         <option value="$PROJECT_DIR$/src/FontSetterActionListener.java" />
         <option value="$PROJECT_DIR$/src/FontSizeComboItem.java" />
         <option value="$PROJECT_DIR$/src/EnterButtonActionListener.java" />
-        <option value="$PROJECT_DIR$/src/OpenActionListener.java" />
         <option value="$PROJECT_DIR$/src/LangTypeComboItem.java" />
         <option value="$PROJECT_DIR$/src/LanguageActionListener.java" />
         <option value="$PROJECT_DIR$/src/BottomToolBarActionListener.java" />
-        <option value="$PROJECT_DIR$/src/FileTree.java" />
-        <option value="$PROJECT_DIR$/src/AboutActionListener.java" />
         <option value="$PROJECT_DIR$/src/RadioButtonActionListener.java" />
-        <option value="$PROJECT_DIR$/src/UserInterface.java" />
         <option value="$PROJECT_DIR$/src/UserInterface.form" />
+        <option value="$PROJECT_DIR$/src/AddTabActionListener.java" />
+        <option value="$PROJECT_DIR$/src/NewFileView.java" />
+        <option value="$PROJECT_DIR$/src/UserInterface.java" />
+        <option value="$PROJECT_DIR$/src/AboutActionListener.java" />
+        <option value="$PROJECT_DIR$/src/FileTree.java" />
+        <option value="$PROJECT_DIR$/src/OpenActionListener.java" />
       </list>
     </option>
   </component>
@@ -225,6 +198,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -240,6 +215,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="TextEdit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TextEdit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TextEdit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UserInterface" />
+              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TextEdit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TextEdit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -295,9 +302,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -621,12 +626,19 @@
       <option name="project" value="LOCAL" />
       <updated>1482692007506</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added some icons to the top tool bar, font size setter is gone, some buttons moved">
+      <created>1482859169023</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1482859169023</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1920" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -640,7 +652,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960325" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1921875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1921875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -669,7 +681,8 @@
     <MESSAGE value="added everything" />
     <MESSAGE value="char buffer size increased when opening to accomadate large files. Can now open files with up to 100 million chars. This will need to be optimized with an array list or something to reduce memory usage from this giantantic array.&#10;Look and feel changed to nimbus, with some background colors changed" />
     <MESSAGE value="user interface code has better comments. run and compile buttons have action listeners, as does language picker combo box. langauge type  throws null pointer errors" />
-    <option name="LAST_COMMIT_MESSAGE" value="user interface code has better comments. run and compile buttons have action listeners, as does language picker combo box. langauge type  throws null pointer errors" />
+    <MESSAGE value="Added some icons to the top tool bar, font size setter is gone, some buttons moved" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added some icons to the top tool bar, font size setter is gone, some buttons moved" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -680,14 +693,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/FontSizeComboItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/UserInterface.form">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -719,18 +724,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FontSizeSetterActionListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="18" column="75" selection-start-line="18" selection-start-column="75" selection-end-line="18" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FontSizeSetterActionListener.java" />
     <entry file="file://$PROJECT_DIR$/src/FontSizeComboItem.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -789,13 +787,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FontSizeSetterActionListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="75" selection-start-line="18" selection-start-column="75" selection-end-line="18" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FontSizeSetterActionListener.java" />
     <entry file="file://$PROJECT_DIR$/src/LineWrapActionListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
@@ -807,13 +799,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="17" column="46" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/NewFileView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="92" selection-start-line="18" selection-start-column="92" selection-end-line="18" selection-end-column="92" />
         </state>
       </provider>
     </entry>
@@ -896,7 +881,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -918,7 +902,7 @@
         <state relative-caret-position="306">
           <caret line="17" column="83" selection-start-line="17" selection-start-column="83" selection-end-line="17" selection-end-column="83" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -927,14 +911,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="22" column="58" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/OpenActionListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="36" column="41" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
           <folding />
         </state>
       </provider>
@@ -951,7 +927,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -959,7 +934,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -967,7 +941,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1001,37 +974,13 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FileTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="61" column="25" selection-start-line="61" selection-start-column="25" selection-end-line="61" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/png/battery.bmp">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/png/battery.bmp" />
     <entry file="file://$PROJECT_DIR$/assets/play-button.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/png/3d-glasses.bmp">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AboutActionListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="16" column="149" selection-start-line="16" selection-start-column="149" selection-end-line="16" selection-end-column="149" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/png/3d-glasses.bmp" />
     <entry file="file://$PROJECT_DIR$/src/RadioButtonActionListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="438">
@@ -1040,10 +989,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/NewFileView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AboutActionListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/UserInterface.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="268" column="0" selection-start-line="268" selection-start-column="0" selection-end-line="268" selection-end-column="0" />
+        <state relative-caret-position="-1686">
+          <caret line="179" column="95" selection-start-line="179" selection-start-column="95" selection-end-line="179" selection-end-column="95" />
           <folding />
         </state>
       </provider>
@@ -1055,6 +1020,34 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AddTabActionListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="51" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#292#293#0" expanded="true" />
+            <element signature="e#336#337#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FileTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="73" column="30" selection-start-line="73" selection-start-column="23" selection-end-line="82" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OpenActionListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="846">
+          <caret line="52" column="14" selection-start-line="52" selection-start-column="14" selection-end-line="52" selection-end-column="14" />
           <folding />
         </state>
       </provider>

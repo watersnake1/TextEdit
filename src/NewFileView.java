@@ -16,7 +16,7 @@ public class NewFileView extends JFrame {
     private FileTree filePickerTree;
 
     public NewFileView() {
-        filePickerTree = new FileTree(new File("/home/bouy"), new JFrame(), new JEditorPane());
+        //filePickerTree = new FileTree(new File("/home/bouy"), new JFrame(), new JEditorPane());
         setContentPane(panel1);
         setVisible(true);
         newFileSplitPane.setLeftComponent(filePickerTree);

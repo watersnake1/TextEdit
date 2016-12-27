@@ -13,12 +13,14 @@ public class OpenActionListener extends MenuBarActionListener {
     private JPanel panel;
     private File target;
     private JFrame frame;
+    private JTabbedPane tabbedPane;
 
-    public OpenActionListener(JEditorPane editorPane, JPanel panel, File target, JFrame frame) {
+    public OpenActionListener(JEditorPane editorPane, JPanel panel, File target, JFrame frame, JTabbedPane tabbedPane) {
         this.editorPane = editorPane;
         this.panel = panel;
         this.target = target;
         this.frame =  (JFrame) frame;
+        this.tabbedPane = tabbedPane;
     }
 
 
@@ -42,7 +44,16 @@ public class OpenActionListener extends MenuBarActionListener {
             e1.printStackTrace();
         }
         String text = new String(buffer, 0, n);
-        editorPane.setText(text);
+        JEditorPane edit = new JEditorPane();
+        JScrollPane scrollPane = new JScrollPane(edit);
+        if (tabbedPane.getTitleAt(tabbedPane.getSelectedIndex()).equals("untitled")) {
+            tabbedPane.setTitleAt(tabbedPane.getSelectedIndex(), target.getName());
+            editorPane.setText(text);
+        }
+        else {
+            tabbedPane.addTab(target.getName(), scrollPane);
+            edit.setText(text);
+        }
         try {
             in.close();
         } catch (IOException e1) {

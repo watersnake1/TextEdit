@@ -29,11 +29,13 @@ import javax.swing.tree.DefaultMutableTreeNode;
         /** Construct a FileTree */
         private JFrame frame;
         private JEditorPane editorPane;
+        private JTabbedPane tabbedPane;
 
-        public FileTree(File dir, JFrame frame, JEditorPane editorPane) {
+        public FileTree(File dir, JFrame frame, JEditorPane editorPane, JTabbedPane tabbedPane) {
             setLayout(new BorderLayout());
             this.frame = frame;
             this.editorPane = editorPane;
+            this.tabbedPane = tabbedPane;
             // Make a tree list with all the nodes, and make it a JTree
             JTree tree = new JTree(addNodes(null, dir));
 
@@ -52,6 +54,7 @@ import javax.swing.tree.DefaultMutableTreeNode;
                         File target = new File(path);
                         //set the title of the frame to the name of the file
                         frame.setTitle(target.getName());
+                        //tabbedPane.setTitleAt(tabbedPane.getSelectedIndex(), target.getName());
                         //read from the file
                         FileReader in = null;
                         try {
@@ -68,7 +71,16 @@ import javax.swing.tree.DefaultMutableTreeNode;
                             e1.printStackTrace();
                         }
                         String text = new String(buffer, 0, n);
-                        editorPane.setText(text);
+                        JEditorPane edit = new JEditorPane();
+                        JScrollPane scrollPane = new JScrollPane(edit);
+                        if (tabbedPane.getTitleAt(tabbedPane.getSelectedIndex()).equals("untitled")) {
+                            tabbedPane.setTitleAt(tabbedPane.getSelectedIndex(), target.getName());
+                            editorPane.setText(text);
+                        }
+                        else {
+                            tabbedPane.addTab(target.getName(), scrollPane);
+                            edit.setText(text);
+                        }
                         try {
                             in.close();
                         } catch (IOException e1) {

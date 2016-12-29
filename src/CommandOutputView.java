@@ -10,6 +10,7 @@ public class CommandOutputView  extends JFrame {
     private JButton clearButton;
     private JButton exitButton;
     private JToolBar commandToolBar;
+    private JButton copyOutputButton;
 
     public CommandOutputView() {
         super("Command Output");

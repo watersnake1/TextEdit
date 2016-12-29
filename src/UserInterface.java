@@ -1,7 +1,10 @@
 import javax.swing.*;
+import javax.swing.text.BadLocationException;
 import javax.swing.text.Document;
 import javax.swing.text.PlainDocument;
+import javax.swing.text.SimpleAttributeSet;
 import java.awt.*;
+import java.awt.event.ActionEvent;
 import java.io.*;
 
 /**
@@ -86,6 +89,7 @@ public class UserInterface extends JFrame {
     private JMenuItem paste;
     private JMenuItem copy;
     private JMenuItem newDoc;
+    private JMenuItem testItem;
 
     //path to the file
     private String filePath;
@@ -103,6 +107,10 @@ public class UserInterface extends JFrame {
     private LangTypeComboItem java;
     private LangTypeComboItem python;
     private String currentLang;
+
+    private Document pane;
+
+    private FileTree leftFileTree;
 
     /**
      * Create a new instance of the editor with a blank unsaved file
@@ -129,6 +137,7 @@ public class UserInterface extends JFrame {
         save = new JMenuItem("Save");
         open = new JMenuItem("Open");
         newDoc = new JMenuItem("New");
+        testItem = new JMenuItem("test");
 
         edit = new JMenu("Edit");
         cut = new JMenuItem("cut");
@@ -152,12 +161,13 @@ public class UserInterface extends JFrame {
         edit.add(cut);
         edit.add(copy);
         edit.add(paste);
+        edit.add(testItem);
 
         //code for top menu bar is hard coded
         setJMenuBar(topMenu);
         ////////////////////////////////////////////////////////////////////////////
 
-
+        leftFileTree = new FileTree(new File("."), this, editorPane1, topTabbedPane);
 
         //in future, if this is true editor will match curly braces
         shouldBeCodeEditor = true;
@@ -177,7 +187,7 @@ public class UserInterface extends JFrame {
 
 
         //set the left side to be a file tree in current working dir
-        splitPane.setLeftComponent(new FileTree(new File("."), this, editorPane1, topTabbedPane));
+        splitPane.setLeftComponent(leftFileTree);
         add(upperJPanel);
         topMenu.add(file);
         //set the focus of the window to be the top most jpanel
@@ -187,7 +197,7 @@ public class UserInterface extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
         //get the document of the editor pane (for formatting)
-        Document pane = editorPane1.getDocument();
+        pane = editorPane1.getDocument();
 
         //this is the default font
         editorPane1.setFont(new Font("DejaVu Sans", Font.PLAIN, 14));
@@ -204,7 +214,7 @@ public class UserInterface extends JFrame {
         //start action listeners
         actionListeners();
         playground();
-        matchCurlyBraces();
+        //matchCurlyBraces();
         //repaint the screen just in case
         panel1.updateUI();
     }
@@ -251,7 +261,7 @@ public class UserInterface extends JFrame {
     public void actionListeners() {
         about.addActionListener(new AboutActionListener(panel1));
         quit.addActionListener(new QuitActionListener());
-        save.addActionListener(new SaveActionListener(editorPane1, panel1, upperJPanel));
+        save.addActionListener(new SaveActionListener(editorPane1, panel1, upperJPanel, topTabbedPane, leftFileTree));
         open.addActionListener(new OpenActionListener(editorPane1, panel1, target, this, topTabbedPane));
         copy.addActionListener(new CopyActionListener(editorPane1));
         paste.addActionListener(new PasteActionListener(editorPane1));
@@ -259,7 +269,7 @@ public class UserInterface extends JFrame {
         clearButton.addActionListener(new ClearActionListener(editorPane1));
         newDoc.addActionListener(new NewActionListener());
 
-        saveButton.addActionListener(new SaveActionListener(editorPane1, panel1, upperJPanel));
+        saveButton.addActionListener(new SaveActionListener(editorPane1, panel1, upperJPanel, topTabbedPane, leftFileTree));
         openButton.addActionListener(new OpenActionListener(editorPane1, panel1, target, this, topTabbedPane));
         cutButton.addActionListener(new CutActionListener(editorPane1));
         copyButton.addActionListener(new CopyActionListener(editorPane1));
@@ -276,6 +286,7 @@ public class UserInterface extends JFrame {
         runButton.addMouseListener(new BottomToolBarActionListener(1, this));
         languageComboBox.addActionListener(new LanguageActionListener(this, languageComboBox));
         addTab.addActionListener(new AddTabActionListener(topTabbedPane));
+        //pane.addDocumentListener(new TextInputListener(editorPane1, this));
     }
 
     /**
@@ -283,18 +294,11 @@ public class UserInterface extends JFrame {
      * (not yet working)
      */
     public void matchCurlyBraces() {
-        if (shouldBeCodeEditor) {
-            System.out.println("hit");
-            if (editorPane1.getText().length() > 1) {
-                if (getLastCharInSequence(editorPane1.getText()) == '{') {
-                    editorPane1.setText(editorPane1.getText() + '}');
-                } else if (getLastCharInSequence(editorPane1.getText()) == '[') {
-                    editorPane1.setText(editorPane1.getText() + ']');
-                }
-            }
-            else {
-                return;
-            }
+        System.out.println(editorPane1.getDocument());
+        try {
+            editorPane1.getDocument().insertString(0, "}", new SimpleAttributeSet());
+        } catch (BadLocationException e1) {
+            e1.printStackTrace();
         }
     }
 
@@ -312,6 +316,12 @@ public class UserInterface extends JFrame {
      */
     public void playground() {
         //CommandOutputView c = new CommandOutputView();
+        testItem.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                leftFileTree.changeDir(new File("."));
+            }
+        });
 
     }
 

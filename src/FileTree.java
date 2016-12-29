@@ -97,30 +97,44 @@ import javax.swing.tree.DefaultMutableTreeNode;
             add(BorderLayout.CENTER, scrollpane);
         }
 
+
+
         /** Add nodes from under "dir" into curTop. Highly recursive. */
         DefaultMutableTreeNode addNodes(DefaultMutableTreeNode curTop, File dir) {
+            //get the path to the current file
             String curPath = dir.getPath();
+            //create a new tree node at the current top level path
             DefaultMutableTreeNode curDir = new DefaultMutableTreeNode(curPath);
+            //if not at the top, add another node
             if (curTop != null) { // should only be null at root
                 curTop.add(curDir);
             }
             Vector ol = new Vector();
+            //list out all the files and directories as strings underneath the current file
             String[] tmp = dir.list();
             for (int i = 0; i < tmp.length; i++)
                 ol.addElement(tmp[i]);
+            //sort the files and directories in alphabetical order
             Collections.sort(ol, String.CASE_INSENSITIVE_ORDER);
             File f;
             Vector files = new Vector();
             // Make two passes, one for Dirs and one for Files. This is #1.
             for (int i = 0; i < ol.size(); i++) {
+                //get an object as a string out of the vector
                 String thisObject = (String) ol.elementAt(i);
                 String newPath;
+                //if the path is the top level path set new path to the current path and stop
                 if (curPath.equals("."))
                     newPath = thisObject;
+                //otherwise, set the current path to the top level path plus a slash plus the path to the object element
                 else
-                    newPath = curPath + File.separator + thisObject;
-                if ((f = new File(newPath)).isDirectory())
+                    //newPath = curPath + File.separator + thisObject + "/";
+                    newPath = new String(curPath + File.separator + thisObject + "/");
+                    //System.out.println(newPath + File.separator);
+                //if the file is a directory, start again and go into that directory
+                if ((f = new File(newPath)).isDirectory() /*(f = new File(newPath).getAbsoluteFile()).isDirectory()*/) {
                     addNodes(curDir, f);
+                }
                 else
                     files.addElement(thisObject);
             }
@@ -128,6 +142,11 @@ import javax.swing.tree.DefaultMutableTreeNode;
             for (int fnum = 0; fnum < files.size(); fnum++)
                 curDir.add(new DefaultMutableTreeNode(files.elementAt(fnum)));
             return curDir;
+        }
+
+        public void changeDir(File dir) {
+            addNodes(null, dir);
+            updateUI();
         }
 
         public Dimension getMinimumSize() {

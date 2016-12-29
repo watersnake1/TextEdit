@@ -223,33 +223,19 @@
                 <properties/>
                 <border type="none"/>
                 <children>
-                  <grid id="ba130" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
-                    <margin top="0" left="0" bottom="0" right="0"/>
+                  <scrollpane id="1dcc0">
                     <constraints>
                       <tabbedpane title="Untitled"/>
                     </constraints>
                     <properties/>
                     <border type="none"/>
                     <children>
-                      <scrollpane id="c21ec">
-                        <constraints>
-                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
-                        </constraints>
+                      <component id="cfafe" class="javax.swing.JEditorPane" binding="editorPane1" default-binding="true">
+                        <constraints/>
                         <properties/>
-                        <border type="none"/>
-                        <children>
-                          <component id="a7e81" class="javax.swing.JEditorPane" binding="editorPane1" default-binding="true">
-                            <constraints/>
-                            <properties>
-                              <background color="-3614760"/>
-                              <contentType value="text/plain"/>
-                              <font name="NanumGothic" size="14" style="0"/>
-                            </properties>
-                          </component>
-                        </children>
-                      </scrollpane>
+                      </component>
                     </children>
-                  </grid>
+                  </scrollpane>
                 </children>
               </tabbedpane>
               <toolbar id="1476e" binding="bottomMostToolBar">

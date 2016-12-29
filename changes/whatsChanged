@@ -1,32 +1,3 @@
-<html>
-  <head>
-    
-  </head>
-  <body>
-    What has changed
-
-Font can now be changed
-curly brace matching does not yet work
-icons added to tool bars
-some buttons moved
-
-
-to do
-remember font between changes?
-curly brace matching
-allow for editing in multiple tabs
-Add build and install scripts directly into source code so that everything is 
-    together and accesible at once (if you wanted to make one archive)
-
-when user selects file from left browser view, or when user selects one from 
-    jfilchooser, addtab
-method is called and the info from the file is put into the new tab
-
-useful methods
-addTab() adds another tab to the pane
-add() adds a tab with specified component to the pane
-getSelectedIndex() returns int index of tab that is currently focused
-
-add buttons that show cpu usage, copy to dropbox, and open nautilus
-  </body>
-</html>
+create a custom scroll bar ui
+fix curly brace mathcing (or ditch)
+remember selected font

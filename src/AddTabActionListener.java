@@ -14,7 +14,9 @@ public class AddTabActionListener implements java.awt.event.ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
+        //code seems to be different from that in the open action listeners
         JEditorPane editorPane = new JEditorPane();
-        tabbedPane.addTab("untitled", editorPane);
+        JScrollPane s = new JScrollPane(editorPane);
+        tabbedPane.addTab("untitled", s);
     }
 }

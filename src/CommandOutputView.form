@@ -25,6 +25,12 @@
               <text value="Clear"/>
             </properties>
           </component>
+          <component id="24a01" class="javax.swing.JButton" binding="copyOutputButton" default-binding="true">
+            <constraints/>
+            <properties>
+              <text value="Copy Output"/>
+            </properties>
+          </component>
           <component id="983fc" class="javax.swing.JButton" binding="exitButton" default-binding="true">
             <constraints/>
             <properties>
@@ -43,6 +49,7 @@
           <component id="28778" class="javax.swing.JTextArea" binding="commandField">
             <constraints/>
             <properties>
+              <editable value="false"/>
               <text value=""/>
             </properties>
           </component>

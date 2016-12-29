@@ -1,3 +1,7 @@
 create a custom scroll bar ui
 fix curly brace mathcing (or ditch)
 remember selected font
+work on allowing file tree to repaint after run and show a different directory
+fix issue where closing all the tabs causes things to break, maybe have it so that closing the last tab opens a new one automatically, or just doesnt let you close it
+if user opens the same file twice, then it will not open a new tab, just send you to the old tab
+

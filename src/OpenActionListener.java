@@ -27,7 +27,7 @@ public class OpenActionListener extends MenuBarActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        JFileChooser fileChooser = new JFileChooser();
+        JFileChooser fileChooser = new JFileChooser(new File("."));
         int status = fileChooser.showOpenDialog(panel);
         target = fileChooser.getSelectedFile();
         frame.setTitle(target.getName());

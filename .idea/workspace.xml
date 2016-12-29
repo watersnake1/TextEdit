@@ -7,24 +7,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f1272f5e-5c2b-4b7c-982e-f8ad8cf04f13" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/TextInputListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TextEdit/AboutActionListener.class" afterPath="$PROJECT_DIR$/out/production/TextEdit/AboutActionListener.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TextEdit/CommandOutputView.class" afterPath="$PROJECT_DIR$/out/production/TextEdit/CommandOutputView.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TextEdit/FileTree$1.class" afterPath="$PROJECT_DIR$/out/production/TextEdit/FileTree$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TextEdit/FileTree.class" afterPath="$PROJECT_DIR$/out/production/TextEdit/FileTree.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TextEdit/NewFileView.class" afterPath="$PROJECT_DIR$/out/production/TextEdit/NewFileView.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/RemoveTabActionListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/RightClickActionListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/TabbedPopUpMenu.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TextEdit/OpenActionListener.class" afterPath="$PROJECT_DIR$/out/production/TextEdit/OpenActionListener.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TextEdit/SaveActionListener.class" afterPath="$PROJECT_DIR$/out/production/TextEdit/SaveActionListener.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TextEdit/UserInterface.class" afterPath="$PROJECT_DIR$/out/production/TextEdit/UserInterface.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/changes/whatsChanged" afterPath="$PROJECT_DIR$/changes/whatsChanged" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AddTabActionListener.java" afterPath="$PROJECT_DIR$/src/AddTabActionListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CommandOutputView.form" afterPath="$PROJECT_DIR$/src/CommandOutputView.form" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CommandOutputView.java" afterPath="$PROJECT_DIR$/src/CommandOutputView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FileTree.java" afterPath="$PROJECT_DIR$/src/FileTree.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/OpenActionListener.java" afterPath="$PROJECT_DIR$/src/OpenActionListener.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SaveActionListener.java" afterPath="$PROJECT_DIR$/src/SaveActionListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/UserInterface.form" afterPath="$PROJECT_DIR$/src/UserInterface.form" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/UserInterface.java" afterPath="$PROJECT_DIR$/src/UserInterface.java" />
     </list>
     <ignored path="TextEdit.iws" />
@@ -49,58 +41,21 @@
       <file leaf-file-name="UserInterface.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/UserInterface.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
-              <caret line="271" column="121" selection-start-line="271" selection-start-column="121" selection-end-line="271" selection-end-column="121" />
+            <state relative-caret-position="38">
+              <caret line="215" column="53" selection-start-line="215" selection-start-column="53" selection-end-line="215" selection-end-column="53" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserInterface.form" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/UserInterface.form">
-          <provider selected="true" editor-type-id="ui-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FileTree.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/FileTree.java">
+      <file leaf-file-name="RightClickActionListener.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/RightClickActionListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1500">
-              <caret line="134" column="20" selection-start-line="134" selection-start-column="20" selection-end-line="134" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SaveActionListener.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/SaveActionListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="36" column="81" selection-start-line="36" selection-start-column="81" selection-end-line="36" selection-end-column="81" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AddTabActionListener.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AddTabActionListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
+            <state relative-caret-position="324">
+              <caret line="22" column="55" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OpenActionListener.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/OpenActionListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -148,11 +103,14 @@
         <option value="$PROJECT_DIR$/src/TextInputListener.java" />
         <option value="$PROJECT_DIR$/changes/whatsChanged" />
         <option value="$PROJECT_DIR$/src/FileTree.java" />
-        <option value="$PROJECT_DIR$/src/OpenActionListener.java" />
         <option value="$PROJECT_DIR$/src/UserInterface.form" />
         <option value="$PROJECT_DIR$/src/AddTabActionListener.java" />
-        <option value="$PROJECT_DIR$/src/UserInterface.java" />
+        <option value="$PROJECT_DIR$/src/OpenActionListener.java" />
         <option value="$PROJECT_DIR$/src/SaveActionListener.java" />
+        <option value="$PROJECT_DIR$/src/RightClickActionListener.java" />
+        <option value="$PROJECT_DIR$/src/RemoveTabActionListener.java" />
+        <option value="$PROJECT_DIR$/src/UserInterface.java" />
+        <option value="$PROJECT_DIR$/src/TabbedPopUpMenu.java" />
       </list>
     </option>
   </component>
@@ -621,7 +579,14 @@
       <option name="project" value="LOCAL" />
       <updated>1482881637869</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="tabbed editing saving error fixed. Any tab can save its contetnts independently. tab name will change to file name after a save.">
+      <created>1483034259855</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1483034259855</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -671,7 +636,8 @@
     <MESSAGE value="user interface code has better comments. run and compile buttons have action listeners, as does language picker combo box. langauge type  throws null pointer errors" />
     <MESSAGE value="Added some icons to the top tool bar, font size setter is gone, some buttons moved" />
     <MESSAGE value="tabs now work" />
-    <option name="LAST_COMMIT_MESSAGE" value="tabs now work" />
+    <MESSAGE value="tabbed editing saving error fixed. Any tab can save its contetnts independently. tab name will change to file name after a save." />
+    <option name="LAST_COMMIT_MESSAGE" value="tabbed editing saving error fixed. Any tab can save its contetnts independently. tab name will change to file name after a save." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -682,21 +648,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/changes/whatsChanged">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FontSizeSetterActionListener.java" />
-    <entry file="file://$PROJECT_DIR$/src/FontSizeComboItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/UserInterface.form">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -953,25 +904,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
       <provider editor-type-id="ui-designer">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/changes/whatsChanged">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FileTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1500">
-          <caret line="134" column="20" selection-start-line="134" selection-start-column="20" selection-end-line="134" selection-end-column="20" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/stalememe.txt">
@@ -982,10 +919,74 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/AddTabActionListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RemoveTabActionListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="57" selection-start-line="9" selection-start-column="57" selection-end-line="9" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#269#270#0" expanded="true" />
+            <element signature="e#313#314#0" expanded="true" />
+            <element signature="e#377#378#0" expanded="true" />
+            <element signature="e#441#442#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UserInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="215" column="53" selection-start-line="215" selection-start-column="53" selection-end-line="215" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/changes/whatsChanged">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TabbedPopUpMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="73" selection-start-line="12" selection-start-column="73" selection-end-line="12" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/OpenActionListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+        <state relative-caret-position="132">
+          <caret line="29" column="63" selection-start-line="29" selection-start-column="63" selection-end-line="29" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SaveActionListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="28" column="67" selection-start-line="28" selection-start-column="67" selection-end-line="28" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FileTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1662">
+          <caret line="134" column="20" selection-start-line="134" selection-start-column="20" selection-end-line="134" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -1001,29 +1002,13 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AddTabActionListener.java">
+    <entry file="file://$PROJECT_DIR$/src/RightClickActionListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
+        <state relative-caret-position="324">
+          <caret line="22" column="55" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/UserInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="271" column="121" selection-start-line="271" selection-start-column="121" selection-end-line="271" selection-end-column="121" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SaveActionListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="36" column="81" selection-start-line="36" selection-start-column="81" selection-end-line="36" selection-end-column="81" />
-          <folding />
         </state>
       </provider>
     </entry>

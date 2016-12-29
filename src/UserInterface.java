@@ -112,6 +112,8 @@ public class UserInterface extends JFrame {
 
     private FileTree leftFileTree;
 
+    private TabbedPopUpMenu popUpMenu;
+
     /**
      * Create a new instance of the editor with a blank unsaved file
      */
@@ -211,6 +213,7 @@ public class UserInterface extends JFrame {
             pane.putProperty(PlainDocument.tabSizeAttribute, 2);
         }
         filePath = null;
+        popUpMenu = new TabbedPopUpMenu(topTabbedPane);
         //start action listeners
         actionListeners();
         playground();
@@ -286,6 +289,7 @@ public class UserInterface extends JFrame {
         runButton.addMouseListener(new BottomToolBarActionListener(1, this));
         languageComboBox.addActionListener(new LanguageActionListener(this, languageComboBox));
         addTab.addActionListener(new AddTabActionListener(topTabbedPane));
+        topTabbedPane.addMouseListener(new RightClickActionListener(popUpMenu, topTabbedPane));
         //pane.addDocumentListener(new TextInputListener(editorPane1, this));
     }
 

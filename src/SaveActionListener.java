@@ -26,7 +26,7 @@ public class SaveActionListener extends MenuBarActionListener{
     @Override
     public void actionPerformed(ActionEvent e) {
         try {
-            JFileChooser fileChooser = new JFileChooser();
+            JFileChooser fileChooser = new JFileChooser(new File("."));
             int status = fileChooser.showSaveDialog(panel);
             File target = fileChooser.getSelectedFile();
             FileWriter outBound = new FileWriter(target);

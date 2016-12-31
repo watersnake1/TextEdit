@@ -30,12 +30,14 @@ import javax.swing.tree.DefaultMutableTreeNode;
         private JFrame frame;
         private JEditorPane editorPane;
         private JTabbedPane tabbedPane;
+        private UserInterface userInterface;
 
-        public FileTree(File dir, JFrame frame, JEditorPane editorPane, JTabbedPane tabbedPane) {
+        public FileTree(File dir, JFrame frame, JEditorPane editorPane, JTabbedPane tabbedPane, UserInterface userInterface) {
             setLayout(new BorderLayout());
             this.frame = frame;
             this.editorPane = editorPane;
             this.tabbedPane = tabbedPane;
+            this.userInterface = userInterface;
             // Make a tree list with all the nodes, and make it a JTree
             JTree tree = new JTree(addNodes(null, dir));
 
@@ -86,6 +88,8 @@ import javax.swing.tree.DefaultMutableTreeNode;
                         } catch (IOException e1) {
                             e1.printStackTrace();
                         }
+                        userInterface.getTabNames().add(target.getName());
+                        userInterface.DocumentViewSetUp();
                     }
 
                 }

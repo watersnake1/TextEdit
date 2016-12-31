@@ -1,7 +1,40 @@
-create a custom scroll bar ui
 fix curly brace mathcing (or ditch)
-remember selected font
 work on allowing file tree to repaint after run and show a different directory
-fix issue where closing all the tabs causes things to break, maybe have it so that closing the last tab opens a new one automatically, or just doesnt let you close it
-if user opens the same file twice, then it will not open a new tab, just send you to the old tab
+got rid of the auto compile feature
+bold and italics may or may not work at the moment
+coming soon: documents view, where you can see the currently open documents in a different view
+coming soon: syntax highlighting: certain chars (and possibly later, certain words) will be highlighted different colors
+
+doucments view:
+add jtabbedpane above the file tree so that the user can switch in between the file tree and the documents view
+documents view will represent each open tab as some kind of graphic visual and when clicked will switch the open tab in the editor
+make the docs view scroll
+add a right click menu so that allows view and close actions on each menu item
+
+syntax higlighting
+see the chrome bookmark of stack over flow post for more information
+will need to init the jeditorpane witha styled document
+add a style to the document, then set character attributes for that style
+will highlight {, [, in one color, then numbers in another color
+later add in highlighting for words like "new", "system" etc.
+
+right click menu
+need a way to have the right click menu show up on right click no matter the tab that it is currently in
+possibly add it to the main interface or some other upper level container then query the jtabbedpane as to which editor is currently active
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

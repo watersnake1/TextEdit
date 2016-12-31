@@ -21,12 +21,15 @@ public class RightClickActionListener implements MouseListener {
     @Override
     public void mouseClicked(MouseEvent e) {
         if (SwingUtilities.isRightMouseButton(e)) {
-            popUpMenu.setVisible(true);
-            popUpMenu.show(invoker, e.getX(), e.getY());
+            if (invoker.getTabCount() > 1) {
+                popUpMenu.setVisible(true);
+                popUpMenu.show(invoker, e.getX(), e.getY());
+            }
+            else if (SwingUtilities.isLeftMouseButton(e)) {
+                popUpMenu.setVisible(false);
+            }
         }
-        else if (SwingUtilities.isLeftMouseButton(e)) {
-            popUpMenu.setVisible(false);
-        }
+
     }
 
     @Override

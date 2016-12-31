@@ -1,6 +1,7 @@
 package ActionListeners;
 
 import GraphicalInterface.FontComboItem;
+import GraphicalInterface.UserInterface;
 
 import javax.swing.*;
 import java.awt.*;
@@ -15,12 +16,14 @@ public class FontSetterActionListener implements java.awt.event.ActionListener {
     private JEditorPane editorPane;
     private JRadioButton boldButton;
     private JRadioButton italicButton;
+    private UserInterface userInterface;
 
-    public FontSetterActionListener(JComboBox comboBox, JEditorPane editorPane, JRadioButton boldButton, JRadioButton italicButton) {
+    public FontSetterActionListener(JComboBox comboBox, UserInterface userInterface, JRadioButton boldButton, JRadioButton italicButton) {
         this.comboBox = comboBox;
-        this.editorPane = editorPane;
+        this.userInterface = userInterface;
         this.boldButton = boldButton;
         this.italicButton = italicButton;
+        editorPane = userInterface.getForegroundEditor();
     }
 
     @Override

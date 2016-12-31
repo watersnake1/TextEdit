@@ -13,14 +13,30 @@ import java.awt.Toolkit;
  */
 public class CopyActionListener extends MenuBarActionListener {
     private JEditorPane editorPane;
+    private JTextArea textArea;
+    private boolean isEditPane;
 
     public CopyActionListener(JEditorPane editorPane) {
         this.editorPane = editorPane;
+        textArea = null;
+        isEditPane = true;
+    }
+
+    public CopyActionListener(JTextArea textArea) {
+        this.textArea = textArea;
+        editorPane = null;
+        isEditPane = false;
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        String textToCopy = editorPane.getSelectedText();
+        String textToCopy;
+        if (isEditPane) {
+            textToCopy = editorPane.getSelectedText();
+        }
+        else {
+            textToCopy = textArea.getText();
+        }
         StringSelection textSelection = new StringSelection(textToCopy);
         Clipboard clpbrd = Toolkit.getDefaultToolkit().getSystemClipboard();
         clpbrd.setContents(textSelection, null);

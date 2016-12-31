@@ -1,5 +1,7 @@
 package ActionListeners;
 
+import GraphicalInterface.UserInterface;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -9,9 +11,11 @@ import java.awt.event.ActionEvent;
  */
 public class AddTabActionListener implements java.awt.event.ActionListener {
     private JTabbedPane tabbedPane;
+    private UserInterface userInterface;
 
-    public AddTabActionListener(JTabbedPane tabbedPane) {
+    public AddTabActionListener(JTabbedPane tabbedPane, UserInterface userInterface) {
         this.tabbedPane = tabbedPane;
+        this.userInterface = userInterface;
     }
 
     @Override
@@ -20,5 +24,6 @@ public class AddTabActionListener implements java.awt.event.ActionListener {
         JEditorPane editorPane = new JEditorPane();
         JScrollPane s = new JScrollPane(editorPane);
         tabbedPane.addTab("untitled", s);
+        userInterface.getTabNames().add("untitled");
     }
 }

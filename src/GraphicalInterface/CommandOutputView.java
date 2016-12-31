@@ -1,6 +1,7 @@
 package GraphicalInterface;
 
 import ActionListeners.ClearActionListener;
+import ActionListeners.CopyActionListener;
 
 import javax.swing.*;
 import java.awt.Dimension;
@@ -28,6 +29,7 @@ public class CommandOutputView  extends JFrame {
             e.printStackTrace();
         }
         exitButton.addActionListener(new ClearActionListener(getCommandField()));
+        copyOutputButton.addActionListener(new CopyActionListener(getCommandField()));
         pack();
     }
 

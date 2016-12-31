@@ -1,7 +1,9 @@
 package GraphicalInterface;
 
 import ActionListeners.*;
+import org.w3c.dom.stylesheets.DocumentStyle;
 
+import javax.print.Doc;
 import javax.swing.*;
 import javax.swing.text.BadLocationException;
 import javax.swing.text.Document;
@@ -10,6 +12,7 @@ import javax.swing.text.SimpleAttributeSet;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.io.*;
+import java.util.ArrayList;
 
 /**
  * Created by christian on 10/19/16.
@@ -71,8 +74,6 @@ public class UserInterface extends JFrame {
     private JLabel compileButton;
     //button to auto run code
     private JLabel runButton;
-    //the tool bar with the run button
-    private JToolBar bottomMostToolBar;
     //lang support combo box
     private JComboBox languageComboBox;
     private JButton addTab;
@@ -118,6 +119,14 @@ public class UserInterface extends JFrame {
 
     private TabbedPopUpMenu popUpMenu;
 
+    private RightClickMenu rightClickMenu;
+
+    private JTabbedPane filesTabbedPane;
+
+    private ArrayList<String> tabNames;
+    private ArrayList<String> previouslyAdded;
+
+    private DocumentsView docsView;
     /**
      * Create a new instance of the editor with a blank unsaved file
      */
@@ -172,28 +181,26 @@ public class UserInterface extends JFrame {
         //code for top menu bar is hard coded
         setJMenuBar(topMenu);
         ////////////////////////////////////////////////////////////////////////////
-
-        leftFileTree = new FileTree(new File(".."), this, editorPane1, topTabbedPane);
-
+        leftFileTree = new FileTree(new File(".."), this, editorPane1, topTabbedPane, this);
+        filesTabbedPane = new JTabbedPane(2);
         //in future, if this is true editor will match curly braces
         shouldBeCodeEditor = true;
 
-        //configure the bottom menu items and set thier icons
-        currentLang = "java";
-        java = new LangTypeComboItem(false, "java");
-        python = new LangTypeComboItem(true, "python");
-        compileIcon = new ImageIcon("reload.png");
-        runIcon = new ImageIcon("play-button.png");
-        languageComboBox.addItem(java);
-        languageComboBox.addItem(python);
+
 
 
         //set the size
         setPreferredSize(new Dimension(900,700));
 
+        docsView = new DocumentsView("Documents");
 
         //set the left side to be a file tree in current working dir
-        splitPane.setLeftComponent(leftFileTree);
+        filesTabbedPane.setTabPlacement(SwingConstants.TOP);
+        splitPane.setLeftComponent(filesTabbedPane);
+        filesTabbedPane.add(leftFileTree, 0);
+        filesTabbedPane.add(docsView);
+        filesTabbedPane.setTitleAt(0, "File View");
+        filesTabbedPane.setTitleAt(1, "Documents View");
         add(upperJPanel);
         topMenu.add(file);
         //set the focus of the window to be the top most jpanel
@@ -218,10 +225,20 @@ public class UserInterface extends JFrame {
         }
         filePath = null;
         popUpMenu = new TabbedPopUpMenu(topTabbedPane);
+        rightClickMenu = new RightClickMenu(editorPane1);
+
+        tabNames = new ArrayList<>();
+        previouslyAdded = new ArrayList<>();
+
+        tabNames.add("untitled");
+        previouslyAdded.add("untitled");
+
         //start action listeners
         actionListeners();
         playground();
         //matchCurlyBraces();
+        DocumentViewSetUp();
+        docsView.add(new DocumentItem("untitled").getItemPanel());
         //repaint the screen just in case
         panel1.updateUI();
     }
@@ -269,7 +286,7 @@ public class UserInterface extends JFrame {
         about.addActionListener(new AboutActionListener(panel1));
         quit.addActionListener(new QuitActionListener());
         save.addActionListener(new SaveActionListener(editorPane1, panel1, upperJPanel, topTabbedPane, leftFileTree));
-        open.addActionListener(new OpenActionListener(editorPane1, panel1, target, this, topTabbedPane));
+        open.addActionListener(new OpenActionListener(editorPane1, panel1, target, this, topTabbedPane, this));
         copy.addActionListener(new CopyActionListener(editorPane1));
         paste.addActionListener(new PasteActionListener(editorPane1));
         cut.addActionListener(new CutActionListener(editorPane1));
@@ -277,23 +294,21 @@ public class UserInterface extends JFrame {
         //newDoc.addActionListener(new NewActionListener());
 
         saveButton.addActionListener(new SaveActionListener(editorPane1, panel1, upperJPanel, topTabbedPane, leftFileTree));
-        openButton.addActionListener(new OpenActionListener(editorPane1, panel1, target, this, topTabbedPane));
+        openButton.addActionListener(new OpenActionListener(editorPane1, panel1, target, this, topTabbedPane, this));
         cutButton.addActionListener(new CutActionListener(editorPane1));
         copyButton.addActionListener(new CopyActionListener(editorPane1));
         pasteButton.addActionListener(new PasteActionListener(editorPane1));
         aboutButton.addActionListener(new AboutActionListener(panel1));
         quitButton.addActionListener(new QuitActionListener());
-        fontPicker.addActionListener(new FontSetterActionListener(fontPicker, editorPane1, boldButton, italicsButton));
+        fontPicker.addActionListener(new FontSetterActionListener(fontPicker, this, boldButton, italicsButton));
         shouldBeHtml.addActionListener(new LineWrapActionListener(editorPane1, shouldBeHtml));
         boldButton.addActionListener(new RadioButtonActionListener(editorPane1, boldButton));
         italicsButton.addActionListener(new RadioButtonActionListener(editorPane1, italicsButton));
         plainButton.addActionListener(new PlainButtonActionListener(editorPane1));
         enterButton.addActionListener(new EnterButtonActionListener(commandTextField));
-        compileButton.addMouseListener(new BottomToolBarActionListener(0, this));
-        runButton.addMouseListener(new BottomToolBarActionListener(1, this));
-        languageComboBox.addActionListener(new LanguageActionListener(this, languageComboBox));
-        addTab.addActionListener(new AddTabActionListener(topTabbedPane));
+        addTab.addActionListener(new AddTabActionListener(topTabbedPane, this));
         topTabbedPane.addMouseListener(new RightClickActionListener(popUpMenu, topTabbedPane));
+        rightClickMenu.addMouseListener(new EditorRightClickActionListener(this, rightClickMenu));
         //pane.addDocumentListener(new ActionListeners.TextInputListener(editorPane1, this));
     }
 
@@ -342,6 +357,32 @@ public class UserInterface extends JFrame {
         System.out.println("the current lang is " + this.currentLang);
     }
 
+    /**
+     * get the currently active editorpane from the view
+     * @return the currently active editor pane
+     */
+    public JEditorPane getForegroundEditor() {
+        JScrollPane s = (JScrollPane) topTabbedPane.getComponentAt(topTabbedPane.getSelectedIndex());
+        JEditorPane g = (JEditorPane) s.getViewport().getView();
+        return g;
+    }
+
+    /**
+     * add in more document view components to the document view
+     */
+    public void DocumentViewSetUp() {
+        for (String s: tabNames) {
+            if (previouslyAdded.contains(s)) {
+                continue;
+            }
+            else {
+                docsView.add(new DocumentItem(s).getItemPanel());
+                previouslyAdded.add(s);
+            }
+        }
+        docsView.updateUI();
+    }
+
     //getters and setters
     public String getText() { return editorPane1.getText();}
     public JEditorPane getEditorPane1() {return editorPane1;}
@@ -350,4 +391,5 @@ public class UserInterface extends JFrame {
     public JMenu getFile() {return file;}
     public String getCurrentLang() {return currentLang;}
     public File getTarget() {return target;}
+    public ArrayList<String> getTabNames() {return tabNames;}
 }

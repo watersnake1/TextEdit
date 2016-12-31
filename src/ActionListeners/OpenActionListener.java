@@ -1,6 +1,8 @@
 package ActionListeners;
 
 import ActionListeners.MenuBarActionListener;
+import GraphicalInterface.RightClickMenu;
+import GraphicalInterface.UserInterface;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -19,13 +21,16 @@ public class OpenActionListener extends MenuBarActionListener {
     private JFrame frame;
     private JTabbedPane tabbedPane;
     private JEditorPane edit;
+    private UserInterface userInterface;
 
-    public OpenActionListener(JEditorPane editorPane, JPanel panel, File target, JFrame frame, JTabbedPane tabbedPane) {
+    public OpenActionListener(JEditorPane editorPane, JPanel panel, File target, JFrame frame, JTabbedPane tabbedPane,
+                              UserInterface userInterface) {
         this.editorPane = editorPane;
         this.panel = panel;
         this.target = target;
         this.frame =  (JFrame) frame;
         this.tabbedPane = tabbedPane;
+        this.userInterface = userInterface;
         edit = new JEditorPane();
     }
 
@@ -64,5 +69,8 @@ public class OpenActionListener extends MenuBarActionListener {
         } catch (IOException e1) {
             e1.printStackTrace();
         }
+        userInterface.getTabNames().add(target.getName());
+        userInterface.DocumentViewSetUp();
+
     }
 }

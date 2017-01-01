@@ -7,26 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f1272f5e-5c2b-4b7c-982e-f8ad8cf04f13" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/brackets.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ActionListeners/EditorRightClickActionListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/GraphicalInterface/DocsViewRightClickMenu.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/GraphicalInterface/DocumentItem.form" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/GraphicalInterface/DocumentItem.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/GraphicalInterface/DocumentsView.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/GraphicalInterface/RightClickMenu.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TextEdit/Main.class" afterPath="$PROJECT_DIR$/out/production/TextEdit/Main.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/curly-brackets (1).png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/curly-brackets (2).png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/curly-brackets.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/curly-brackets_2_converted (1).png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/curly-brackets_2_converted.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/curly-brackets_converted.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/changes/whatsChanged" afterPath="$PROJECT_DIR$/changes/whatsChanged" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ActionListeners/AddTabActionListener.java" afterPath="$PROJECT_DIR$/src/ActionListeners/AddTabActionListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ActionListeners/CopyActionListener.java" afterPath="$PROJECT_DIR$/src/ActionListeners/CopyActionListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ActionListeners/FontSetterActionListener.java" afterPath="$PROJECT_DIR$/src/ActionListeners/FontSetterActionListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ActionListeners/OpenActionListener.java" afterPath="$PROJECT_DIR$/src/ActionListeners/OpenActionListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ActionListeners/RightClickActionListener.java" afterPath="$PROJECT_DIR$/src/ActionListeners/RightClickActionListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GraphicalInterface/CommandOutputView.java" afterPath="$PROJECT_DIR$/src/GraphicalInterface/CommandOutputView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GraphicalInterface/FileTree.java" afterPath="$PROJECT_DIR$/src/GraphicalInterface/FileTree.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GraphicalInterface/UserInterface.form" afterPath="$PROJECT_DIR$/src/GraphicalInterface/UserInterface.form" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GraphicalInterface/UserInterface.java" afterPath="$PROJECT_DIR$/src/GraphicalInterface/UserInterface.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
     </list>
     <ignored path="TextEdit.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -50,7 +37,7 @@
       <file leaf-file-name="UserInterface.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GraphicalInterface/UserInterface.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-822">
+            <state relative-caret-position="4104">
               <caret line="240" column="47" selection-start-line="240" selection-start-column="47" selection-end-line="240" selection-end-column="47" />
               <folding />
             </state>
@@ -80,7 +67,7 @@
       <file leaf-file-name="FileTree.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GraphicalInterface/FileTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
+            <state relative-caret-position="1368">
               <caret line="90" column="24" selection-start-line="90" selection-start-column="24" selection-end-line="90" selection-end-column="24" />
               <folding />
             </state>
@@ -90,8 +77,8 @@
       <file leaf-file-name="RightClickActionListener.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ActionListeners/RightClickActionListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="438">
-              <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
+            <state relative-caret-position="414">
+              <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -102,7 +89,7 @@
       <file leaf-file-name="DocumentsView.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GraphicalInterface/DocumentsView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
+            <state relative-caret-position="72">
               <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -113,8 +100,11 @@
       </file>
       <file leaf-file-name="DocumentItem.form" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GraphicalInterface/DocumentItem.form">
-          <provider selected="true" editor-type-id="ui-designer">
-            <state />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
@@ -229,8 +219,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -387,7 +375,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -777,12 +767,19 @@
       <option name="project" value="LOCAL" />
       <updated>1483036683955</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="documents view implemented. it cannot scroll, but will list out every item that is open in a tab. other improvements made as well">
+      <created>1483215165459</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1483215165459</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1920" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -796,7 +793,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960325" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1921875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1921875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -829,7 +826,8 @@
     <MESSAGE value="tabs now work" />
     <MESSAGE value="tabbed editing saving error fixed. Any tab can save its contetnts independently. tab name will change to file name after a save." />
     <MESSAGE value="File Tree now looks one directory up from the working directory. Classes are reorganized into packages" />
-    <option name="LAST_COMMIT_MESSAGE" value="File Tree now looks one directory up from the working directory. Classes are reorganized into packages" />
+    <MESSAGE value="documents view implemented. it cannot scroll, but will list out every item that is open in a tab. other improvements made as well" />
+    <option name="LAST_COMMIT_MESSAGE" value="documents view implemented. it cannot scroll, but will list out every item that is open in a tab. other improvements made as well" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -923,7 +921,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -935,13 +932,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GraphicalInterface/CommandOutputView.form">
-      <provider editor-type-id="ui-designer">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
+      </provider>
+      <provider editor-type-id="ui-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/stalememe.txt" />
@@ -999,7 +996,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="28" column="23" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1007,7 +1003,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="702">
           <caret line="46" column="69" selection-start-line="46" selection-start-column="69" selection-end-line="46" selection-end-column="69" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1015,7 +1010,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="17" column="52" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1023,9 +1017,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="24" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1033,7 +1024,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1041,7 +1031,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
           <caret line="39" column="70" selection-start-line="39" selection-start-column="70" selection-end-line="39" selection-end-column="70" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1056,7 +1045,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1064,7 +1052,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="4" column="100" selection-start-line="4" selection-start-column="100" selection-end-line="4" selection-end-column="100" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1072,9 +1059,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="26" column="51" selection-start-line="26" selection-start-column="51" selection-end-line="26" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1082,9 +1066,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
           <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1092,27 +1073,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="25" column="57" selection-start-line="25" selection-start-column="57" selection-end-line="25" selection-end-column="57" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GraphicalInterface/UserInterface.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
+      </provider>
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GraphicalInterface/DocumentItem.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
           <caret line="28" column="43" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1120,17 +1097,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="26" column="52" selection-start-line="26" selection-start-column="52" selection-end-line="26" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GraphicalInterface/DocumentsView.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GraphicalInterface/DocumentsView.form" />
     <entry file="file://$PROJECT_DIR$/src/GraphicalInterface/DocumentItem.form">
-      <provider selected="true" editor-type-id="ui-designer">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="ui-designer">
         <state />
       </provider>
     </entry>
@@ -1138,13 +1116,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="447">
           <caret line="72" column="42" selection-start-line="72" selection-start-column="42" selection-end-line="72" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GraphicalInterface/DocumentsView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
+        <state relative-caret-position="72">
           <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1154,7 +1131,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GraphicalInterface/FileTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
+        <state relative-caret-position="1368">
           <caret line="90" column="24" selection-start-line="90" selection-start-column="24" selection-end-line="90" selection-end-column="24" />
           <folding />
         </state>
@@ -1178,7 +1155,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GraphicalInterface/UserInterface.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-822">
+        <state relative-caret-position="4104">
           <caret line="240" column="47" selection-start-line="240" selection-start-column="47" selection-end-line="240" selection-end-column="47" />
           <folding />
         </state>
@@ -1186,8 +1163,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ActionListeners/RightClickActionListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
+        <state relative-caret-position="414">
+          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

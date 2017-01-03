@@ -2,10 +2,7 @@ package GraphicalInterface; /**
  * Created by christian on 12/16/16.
  */
 
-import java.awt.BorderLayout;
-import java.awt.Color;
-import java.awt.Container;
-import java.awt.Dimension;
+import java.awt.*;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -17,8 +14,9 @@ import javax.swing.*;
 import javax.swing.event.TreeSelectionEvent;
 import javax.swing.event.TreeSelectionListener;
 import javax.swing.tree.DefaultMutableTreeNode;
+import javax.swing.tree.DefaultTreeCellRenderer;
 
-    /**
+/**
      * Display a file system in a JTree view
      *
      * Need a way to get file associated with the node
@@ -31,6 +29,8 @@ import javax.swing.tree.DefaultMutableTreeNode;
         private JEditorPane editorPane;
         private JTabbedPane tabbedPane;
         private UserInterface userInterface;
+        private ImageIcon nodeIcon;
+        private ImageIcon leafIcon;
 
         public FileTree(File dir, JFrame frame, JEditorPane editorPane, JTabbedPane tabbedPane, UserInterface userInterface) {
             setLayout(new BorderLayout());
@@ -38,8 +38,16 @@ import javax.swing.tree.DefaultMutableTreeNode;
             this.editorPane = editorPane;
             this.tabbedPane = tabbedPane;
             this.userInterface = userInterface;
+
+            nodeIcon = new ImageIcon("../assets/folder.png");
+            leafIcon = new ImageIcon("../assets/file.png");
             // Make a tree list with all the nodes, and make it a JTree
             JTree tree = new JTree(addNodes(null, dir));
+
+            DefaultTreeCellRenderer renderer = new DefaultTreeCellRenderer();
+            renderer.setLeafIcon(leafIcon);
+            tree.setCellRenderer(renderer);
+
 
             // Add a listener
             tree.addTreeSelectionListener(new TreeSelectionListener() {

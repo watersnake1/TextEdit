@@ -11,7 +11,7 @@ public class DocumentsView extends JPanel {
     public DocumentsView(String title) {
         setVisible(true);
         setPreferredSize(new Dimension(150, 700));
-        add(new JLabel(title));
+        //add(new JLabel(title));
     }
 
 

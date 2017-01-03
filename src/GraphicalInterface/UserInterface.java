@@ -5,6 +5,8 @@ import org.w3c.dom.stylesheets.DocumentStyle;
 
 import javax.print.Doc;
 import javax.swing.*;
+import javax.swing.plaf.metal.MetalTabbedPaneUI;
+import javax.swing.plaf.nimbus.NimbusLookAndFeel;
 import javax.swing.text.BadLocationException;
 import javax.swing.text.Document;
 import javax.swing.text.PlainDocument;
@@ -132,8 +134,9 @@ public class UserInterface extends JFrame {
      */
     public UserInterface() {
         //set the title of the main window
-        super("Sweat editor - Untitled Text");
+        super("editor - Untitled Text");
         //make the swing components look like the system (will match with linux themeing)
+        /*
         try {
             for (UIManager.LookAndFeelInfo info : UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
@@ -143,7 +146,19 @@ public class UserInterface extends JFrame {
             }
         } catch (Exception e) {
             // If Nimbus is not available, you can set the GUI to another look and feel.
-        }
+        }*/
+        /*
+        try {
+            UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (InstantiationException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (UnsupportedLookAndFeelException e) {
+            e.printStackTrace();
+        }*/
         //init menu bar items, set the menu bar ////////////////////////////////////////////////
         topMenu = new JMenuBar();
         file = new JMenu("File");
@@ -182,7 +197,15 @@ public class UserInterface extends JFrame {
         setJMenuBar(topMenu);
         ////////////////////////////////////////////////////////////////////////////
         leftFileTree = new FileTree(new File(".."), this, editorPane1, topTabbedPane, this);
-        filesTabbedPane = new JTabbedPane(2);
+        docsView = new DocumentsView("Documents");
+        filesTabbedPane = new JTabbedPane();
+        filesTabbedPane.setUI(new MetalTabbedPaneUI());
+        filesTabbedPane.addTab("Files View", leftFileTree);
+        filesTabbedPane.addTab("Docs View", docsView);
+        System.out.println(filesTabbedPane.getTabCount());
+
+        //filesTabbedPane = new JTabbedPane();
+        //filesTabbedPane.setBackground(new Color(56, 56, 56));
         //in future, if this is true editor will match curly braces
         shouldBeCodeEditor = true;
 
@@ -192,15 +215,10 @@ public class UserInterface extends JFrame {
         //set the size
         setPreferredSize(new Dimension(900,700));
 
-        docsView = new DocumentsView("Documents");
-
         //set the left side to be a file tree in current working dir
         filesTabbedPane.setTabPlacement(SwingConstants.TOP);
         splitPane.setLeftComponent(filesTabbedPane);
-        filesTabbedPane.add(leftFileTree, 0);
-        filesTabbedPane.add(docsView);
-        filesTabbedPane.setTitleAt(0, "File View");
-        filesTabbedPane.setTitleAt(1, "Documents View");
+
         add(upperJPanel);
         topMenu.add(file);
         //set the focus of the window to be the top most jpanel
@@ -291,7 +309,7 @@ public class UserInterface extends JFrame {
         paste.addActionListener(new PasteActionListener(editorPane1));
         cut.addActionListener(new CutActionListener(editorPane1));
         clearButton.addActionListener(new ClearActionListener(editorPane1));
-        //newDoc.addActionListener(new NewActionListener());
+        newDoc.addActionListener(new AddTabActionListener(topTabbedPane, this));
 
         saveButton.addActionListener(new SaveActionListener(editorPane1, panel1, upperJPanel, topTabbedPane, leftFileTree));
         openButton.addActionListener(new OpenActionListener(editorPane1, panel1, target, this, topTabbedPane, this));
@@ -309,6 +327,7 @@ public class UserInterface extends JFrame {
         addTab.addActionListener(new AddTabActionListener(topTabbedPane, this));
         topTabbedPane.addMouseListener(new RightClickActionListener(popUpMenu, topTabbedPane));
         rightClickMenu.addMouseListener(new EditorRightClickActionListener(this, rightClickMenu));
+        newButton.addActionListener(new AddTabActionListener(topTabbedPane, this));
         //pane.addDocumentListener(new ActionListeners.TextInputListener(editorPane1, this));
     }
 
